@@ -17,7 +17,7 @@
 \usepackage{pdfpages}
 %\usepackage{siunitx}
 %\usepackage{tikz}
-\usepackage{todonotes}
+\usepackage[disable]{todonotes}
 
 \geometry{hmargin=2cm,vmargin=2cm}
 
@@ -46,9 +46,8 @@
 
 \section*{Objective}
 
-Software engineer specializing in low-level systems, machine learning, and
-networking.
-Seeking full time position.
+Seeking full time software engineering position specializing in low-level
+systems, machine learning, and networking.
 
 \section*{Education}
 
@@ -65,57 +64,20 @@ Seeking full time position.
     LinkedIn & \url{https://www.linkedin.com/in/taran-lynn/}\\
 \end{tabular}
 
-\section*{Skills}
-
-\begin{description}
-    \item[Programming Languags (most to least experience)] \hfill\\
-        \fbox{C}
-        \fbox{C++}
-        \fbox{Python}
-        \fbox{Haskell}
-        \fbox{Scala}
-        \fbox{Java}
-        \fbox{Lua}
-        \fbox{Rust}
-        \fbox{Coq}
-        \fbox{Prolog}
-        \fbox{Erlang}
-        \fbox{Clojure}
-        \fbox{Go}
-
-    \item[Technologies Worked On] \hfill\\
-        \fbox{Linux Kernel modules}
-        \fbox{GNU C Library (glibc)}
-        \fbox{Programming Language Interpreters}
-
-    \item[Experience With] \hfill\\
-        \begin{minipage}{0.9\linewidth}
-            \fbox{Networking}
-            \fbox{TCP Congestion Control}
-            \fbox{Embedded Systems}
-            \fbox{AWS (IoT \& Lambda)}
-            \fbox{Control Systems}
-            \fbox{Actor Model}
-            \fbox{CSP Model}
-            \fbox{Software Transaction Memory (STM)}
-            \fbox{Functional Reactive Programming (FRP)}
-        \end{minipage}
-\end{description}
 
 \section*{Projects}
 
 \begin{description}
-    \item[Model Predictive Congestion Control] This is an ongoing research
-        project to develop a new TCP congestion control algorithm that provides
-        a smooth signal across dedicated WANs.
+    \item[Model Predictive Congestion Control]
+        This is an ongoing research project to develop a new TCP congestion
+        control algorithm that provides a smooth signal across dedicated WANs.
         To do this the algorithm employs concepts from model predictive control
         theory.
         The algorithm also allows users to dynamically set pacing rates on a per
         flow basis.
         Implementations have been developed for both the TCP congestion control
         and qDisc layers in the Linux kernel.
-        Initial results have also been presented to ES Net members
-        \todo{Better word?}.
+        Initial results have also been presented to ESnet members.
 %I have been employed since the summer of 2018 (over a year) by U.C. Davis as a
 %researcher.
 %This research position involved working with Professors Dipak Ghosal and
@@ -125,8 +87,9 @@ Seeking full time position.
 %As part of this research I gave a talk to ES Net members at the Lawrence
 %Berkley National Laboratory.
 
-    \item[Randomizing Malloc for Security] This project aimed to disrupt certain
-        classes of buffer overflow attacks that target malloc metadata.
+    \item[Randomizing Malloc for Security]
+        This project aimed to disrupt certain classes of buffer overflow attacks
+        that target malloc metadata.
         Such attacks require malloc to allocate memory chunks in a contiguous,
         predictable order.
         To counteract this we randomized the spacing between the chunks, which
@@ -136,8 +99,8 @@ Seeking full time position.
         For reference the paper was entitled ``Randomizing Malloc: Stomp the
         Script Kiddies.''
 
-    \item[Warcraft II Clone] This was a quarter long project for a software
-        engineering class.
+    \item[Warcraft II Clone]
+        This was a quarter long project for a software engineering class.
         It aimed to clone Warcraft II from abandon-ware.
         I worked in the multiplayer team.
         Our task was to implement the networking and game logic necessary to
@@ -157,6 +120,7 @@ Seeking full time position.
         Transform on sampled audio data, which was then displayed as a
         heat plot on an OLED display on the CC3200.
 \end{description}
+
 
 \section*{Open Source Contributions}
 
@@ -215,10 +179,48 @@ Seeking full time position.
 \end{minipage}
 
 
-\section*{Awards and Achievements}
+\section*{Skills}
+
+\begin{description}
+    \item[Programming Languags (most to least experience)] \hfill\\
+        \fbox{C}
+        \fbox{C++}
+        \fbox{Python}
+        \fbox{Haskell}
+        \fbox{Scala}
+        \fbox{Java}
+        \fbox{Lua}
+        \fbox{Rust}
+        \fbox{Coq}
+        \fbox{Prolog}
+        \fbox{Erlang}
+        \fbox{Clojure}
+        \fbox{Go}
+
+    \item[Technologies Worked On] \hfill\\
+        \fbox{Linux Kernel modules}
+        \fbox{GNU C Library (glibc)}
+        \fbox{Programming Language Interpreters}
+
+    \item[Experience With] \hfill\\
+        \begin{minipage}{0.9\linewidth}
+            \fbox{Networking}
+            \fbox{TCP Congestion Control}
+            \fbox{Embedded Systems}
+            \fbox{AWS (IoT \& Lambda)}
+            \fbox{Control Systems}
+            \fbox{Actor Model}
+            \fbox{CSP Model}
+            \fbox{Software Transaction Memory (STM)}
+            \fbox{Functional Reactive Programming (FRP)}
+        \end{minipage}
+\end{description}
+
+
+\section*{Awards}
 
 \begin{itemize}
-    \item Received a U.C. Davis CS departmental citation in 2019.
+    \item Received 2019 UC David Computer Science Departmental Citation.
         \todo[inline]{Make clear what this is.}
 \end{itemize}
 
