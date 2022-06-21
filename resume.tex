@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass{resume}
 %\usepackage{amsmath}
 %\usepackage{amssymb}
 \usepackage{calc}
@@ -8,7 +8,6 @@
 %\usepackage{enumitem}
 \usepackage{fancyhdr}
 %\usepackage{float}
-\usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{lastpage}
@@ -17,43 +16,24 @@
 \usepackage{pdfpages}
 %\usepackage{siunitx}
 %\usepackage{tikz}
-\usepackage[disable]{todonotes}
+\usepackage{biblatex}
+\usepackage{todonotes}
 
-\geometry{hmargin=2cm,vmargin=2cm}
-
-\newcommand{\splitit}[2]{
-    \noindent
-    \begin{minipage}[t]{0.5\textwidth}
-        #1
-    \end{minipage}
-    \begin{minipage}[t]{0.5\textwidth}
-        #2
-    \end{minipage}
-}
-
-\newcommand{\osscontrib}[3]{\item[#1] #2\hfill\\See #3.}
+\addbibresource{references.bib}
 
 
 \begin{document}
 
-\begin{center}
-    {\Huge Taran Lynn}\\
-    \vspace{0.25em}
-    \hrule
-    \vspace{0.25em}
-    taranlynn0@gmail.com --- (707) 372-3259
-\end{center}
-
-\section*{Objective}
-
-Seeking full time software engineering position specializing in low-level
-systems, machine learning, and networking.
+\makeheader{Taran Lynn}{Specialist in Computer Networks}{Whitethorn, Ca 95589}{taranlynn0@gmail.com}{(707) 372-3259}
 
 \section*{Education}
 
 \begin{itemize}
-    \item 2019 BS in Computer Science and Engineering from U.C. Davis
-        (GPA 3.985).
+\item 2019 BS in Computer Science and Engineering from U.C. Davis
+  (GPA 3.985).
+
+\item MS in Computer Science from U.C. Davis expected by end of
+  June 2022.
 \end{itemize}
 
 \section*{Important Sites}
@@ -64,6 +44,59 @@ systems, machine learning, and networking.
     LinkedIn & \url{https://www.linkedin.com/in/taran-lynn/}\\
 \end{tabular}
 
+
+\section*{Specialty}
+
+I specialize in computer network infrastructure.
+My previous work has focused on researching TCP congestion control
+algorithms and AQM, with a focus on reducing end-to-end tail latency.
+Now my focus has shifted to applying these methods to cloud based networks.
+I have also briefly worked on optimizing HPC systems with deep learning.
+
+
+\section*{Skills}
+
+\begin{description}
+    \item[Programming Languages]
+      C
+      \sep C++
+      \sep Python
+      \sep Haskell
+      \sep Scala
+      \sep Java
+        %\fbox{Lua}
+        %\fbox{Rust}
+        %\fbox{Coq}
+        %\fbox{Prolog}
+        %\fbox{Erlang}
+        %\fbox{Clojure}
+        %\fbox{Go}
+
+    \item[Experience With]
+      Networking
+      \sep TCP Congestion Control
+      \sep AQM
+      \sep AWS (IoT \& Lambda)
+      \sep OpenStack
+      \sep Control Systems
+      \sep Deep Learning
+      \sep Tensorflow
+      \sep PyTorch
+      \sep Docker
+      \sep HPC
+      \sep Slurm
+      % \fbox{Software Transactional Memory (STM);
+      % \fbox{Functional Reactive Programming (FRP);
+\end{description}
+
+
+\section*{Papers}
+
+\begin{itemize}
+\item \fullcite{Lynn2020}
+
+\item \fullcite{TCPD}
+\end{itemize}
 
 \section*{Presentations}
 
@@ -76,11 +109,12 @@ systems, machine learning, and networking.
 \end{description}
 
 
-\section*{Projects}
+\section*{University Projects}
 
+\todo[inline]{Needs to be streamlined}
 \begin{description}
     \item[Model Predictive Congestion Control]
-        This is an ongoing research project to develop a new TCP congestion
+        This is a research project whose aim is to develop a new TCP congestion
         control algorithm that provides a smooth signal across dedicated WANs.
         To do this the algorithm employs concepts from model predictive control
         theory.
@@ -88,15 +122,6 @@ systems, machine learning, and networking.
         flow basis.
         Implementations have been developed for both the TCP congestion control
         and qDisc layers in the Linux kernel.
-        Initial results have also been presented to ESnet members.
-%I have been employed since the summer of 2018 (over a year) by U.C. Davis as a
-%researcher.
-%This research position involved working with Professors Dipak Ghosal and
-%Nathan Hanford on a new model predictive congestion control algorithm for TCP.
-%Two facets of this research involved implementing the algorithm in the Linux
-%kernel and testing it over a 10 Gbps link to ES Net's test nodes.
-%As part of this research I gave a talk to ES Net members at the Lawrence
-%Berkley National Laboratory.
 
     \item[Randomizing Malloc for Security]
         This project aimed to disrupt certain classes of buffer overflow attacks
@@ -107,29 +132,17 @@ systems, machine learning, and networking.
         also had the effect of randomizing allocation order in some cases.
         We submitted a paper detailing the modification to the Hawaii
         International Conference on System Sciences (HICSS) in Spring of 2019.
-        For reference the paper was entitled ``Randomizing Malloc: Stomp the
-        Script Kiddies.''
 
-    \item[Warcraft II Clone]
-        This was a quarter long project for a software engineering class.
-        It aimed to clone Warcraft II from abandon-ware.
-        I worked in the multiplayer team.
-        Our task was to implement the networking and game logic necessary to
-        host online multiplayer matches.
-
-    \item[Tesseract Training]
-        This was a quarter long project for a machine learning class.
-        Our team worked on training the Tesseract OCR engine to improve its
-        accuracy when scanning a large set of wine catalog images provided by
-        U.C.  Davis.
-        The ultimate goal was to help them convert their catalogs to an online,
-        searchable text.
-
-    \item[IoT Sound Analysis]
-        My team developed an IoT application on Texas Instrument's CC3200.
-        This application used AWS Lambda to perform a Fast Fourior
-        Transform on sampled audio data, which was then displayed as a
-        heat plot on an OLED display on the CC3200.
+      \item[Optimizing HPC Scheduling with LSTM Networks]
+        As part of a graduate course on deep learning I worked on a
+        team project with the goal of optimizing scheduling algorithms in
+        high-performance computing (HPC) centers.
+        This project was done in partnership with UC Davis' HPC Core
+        Facilities (HPCCF).
+        The eventual outcome was the development of a long-short term
+        memory (LSTM) network to predict job runtimes and memory usage.
+        I am continuing this work beyond the graduate course, in order to
+        extend the LSTM network into a recommendation system.
 \end{description}
 
 
@@ -176,67 +189,33 @@ systems, machine learning, and networking.
 \end{description}
 
 
-\section*{Notable Courses Taken}
-
-\newcommand{\course}[2]{\fbox{#1 (#2)}}
-
-\begin{minipage}{0.9\linewidth}
-    \course{Algorithm Design}{ECS 122A/B}
-    \course{Circuits I/II}{ENG 17/EEC 100}
-    \course{Computer Architecture}{ECS 154A/B}
-    \course{Embedded Systems}{EEC 172}
-    \course{Machine Learning}{ECS 171}
-    \course{Operating Systems}{ECS 150}
-    \course{Parallel Architectures}{ECS 158}
-\end{minipage}
-
-
-\section*{Skills}
-
-\begin{description}
-    \item[Programming Languags (most to least experience)] \hfill\\
-        \fbox{C}
-        \fbox{C++}
-        \fbox{Python}
-        \fbox{Haskell}
-        \fbox{Scala}
-        \fbox{Java}
-        %\fbox{Lua}
-        %\fbox{Rust}
-        %\fbox{Coq}
-        %\fbox{Prolog}
-        %\fbox{Erlang}
-        %\fbox{Clojure}
-        %\fbox{Go}
-
-    \item[Technologies Worked On] \hfill\\
-        \fbox{Linux Kernel modules}
-        \fbox{GNU C Library (glibc)}
-        \fbox{Programming Language Interpreters}
-
-    \item[Experience With] \hfill\\
-        \begin{minipage}{0.9\linewidth}
-            \fbox{Networking}
-            \fbox{TCP Congestion Control}
-            \fbox{Embedded Systems}
-            \fbox{AWS (IoT \& Lambda)}
-            \fbox{Control Systems}
-            \fbox{Actor Model}
-            \fbox{CSP Model}
-            \fbox{Software Transaction Memory (STM)}
-            \fbox{Functional Reactive Programming (FRP)}
-            \fbox{Protocol Buffers}
-            \fbox{PostgreSQL}
-        \end{minipage}
-\end{description}
-
-
 \section*{Awards}
 
 \begin{itemize}
     \item Received 2019 U.C. Davis Computer Science Departmental Citation.
-        \todo[inline]{Make clear what this is.}
 \end{itemize}
+
+\section*{Fellowships and Grants}
+
+\begin{itemize}
+\item Received the Towards Outstanding Postgraduate Students (TOPS) Award.
+  This is an internal award provided by the College of Engineering at UC Davis.
+\end{itemize}
+
+
+\section*{Notable Courses Taken}
+
+%\newcommand{\course}[2]{\fbox{#1 (#2)}}
+\newcommand{\course}[2]{#1}
+
+    \course{Algorithm Design}{ECS 122A/B}
+\sep\course{Circuits I/II}{ENG 17/EEC 100}
+\sep\course{Computer Architecture}{ECS 154A/B}
+\sep\course{Embedded Systems}{EEC 172}
+\sep\course{Machine Learning}{ECS 171}
+\sep\course{Operating Systems}{ECS 150}
+\sep\course{Parallel Architectures}{ECS 158}
+\sep\course{Deep Learning}{ECS 289G}
 
 \section*{References}
 
