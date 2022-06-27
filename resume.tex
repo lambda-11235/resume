@@ -30,10 +30,9 @@
 
 \begin{itemize}
 \item 2019 BS in Computer Science and Engineering from U.C. Davis
-  (GPA 3.985).
+  (GPA 3.98).
 
-\item MS in Computer Science from U.C. Davis expected by end of
-  June 2022.
+\item 2022 MS in Computer Science from U.C. Davis (GPA 3.85).
 \end{itemize}
 
 \section*{Important Sites}
@@ -111,38 +110,67 @@ I have also briefly worked on optimizing HPC systems with deep learning.
 
 \section*{University Projects}
 
-\todo[inline]{Needs to be streamlined}
 \begin{description}
-    \item[Model Predictive Congestion Control]
-        This is a research project whose aim is to develop a new TCP congestion
-        control algorithm that provides a smooth signal across dedicated WANs.
-        To do this the algorithm employs concepts from model predictive control
-        theory.
-        The algorithm also allows users to dynamically set pacing rates on a per
-        flow basis.
-        Implementations have been developed for both the TCP congestion control
-        and qDisc layers in the Linux kernel.
+    \item[Model Predictive Congestion Control] \hfill
+        %This is a research project whose aim is to develop a new TCP congestion
+        %control algorithm that provides a smooth signal across dedicated WANs.
+        %To do this the algorithm employs concepts from model predictive control
+        %theory.
+        %The algorithm also allows users to dynamically set pacing rates on a per
+        %flow basis.
+        %Implementations have been developed for both the TCP congestion control
+        %and qDisc layers in the Linux kernel.
 
-    \item[Randomizing Malloc for Security]
-        This project aimed to disrupt certain classes of buffer overflow attacks
-        that target malloc metadata.
-        Such attacks require malloc to allocate memory chunks in a contiguous,
-        predictable order.
-        To counteract this we randomized the spacing between the chunks, which
-        also had the effect of randomizing allocation order in some cases.
-        We submitted a paper detailing the modification to the Hawaii
-        International Conference on System Sciences (HICSS) in Spring of 2019.
+        \begin{itemize}
+        \item New TCP congestion control algorithm providing a smooth
+          RTT signal across dedicated WANs.
 
-      \item[Optimizing HPC Scheduling with LSTM Networks]
-        As part of a graduate course on deep learning I worked on a
-        team project with the goal of optimizing scheduling algorithms in
-        high-performance computing (HPC) centers.
-        This project was done in partnership with UC Davis' HPC Core
-        Facilities (HPCCF).
-        The eventual outcome was the development of a long-short term
-        memory (LSTM) network to predict job runtimes and memory usage.
-        I am continuing this work beyond the graduate course, in order to
-        extend the LSTM network into a recommendation system.
+        \item Based on concepts from model predictive control.
+
+        \item Implementations developed for both the TCP congestion
+          control and qDisc layers in the Linux kernel.
+        \end{itemize}
+
+    \item[Randomizing Malloc for Security] \hfill
+        %This project aimed to disrupt certain classes of buffer overflow attacks
+        %that target malloc metadata.
+        %Such attacks require malloc to allocate memory chunks in a contiguous,
+        %predictable order.
+        %To counteract this we randomized the spacing between the chunks, which
+        %also had the effect of randomizing allocation order in some cases.
+        %We submitted a paper detailing the modification to the Hawaii
+        %International Conference on System Sciences (HICSS) in Spring of 2019.
+
+        \begin{itemize}
+        \item Expanded on method to disrupt certain classes of buffer
+          overflow attacks that target malloc metadata.
+
+        \item Main contribution was randomizing spacing between
+          malloc's allocated memory chunks.
+        \end{itemize}
+
+      \item[Optimizing HPC Scheduling with LSTM Networks] \hfill
+        %As part of a graduate course on deep learning I worked on a
+        %team project with the goal of optimizing scheduling algorithms in
+        %high-performance computing (HPC) centers.
+        %This project was done in partnership with UC Davis' HPC Core
+        %Facilities (HPCCF).
+        %The eventual outcome was the development of a long-short term
+        %memory (LSTM) network to predict job runtimes and memory usage.
+        %I am continuing this work beyond the graduate course, in order to
+        %extend the LSTM network into a recommendation system.
+
+        \begin{itemize}
+        \item Part of a graduate course on deep learning.
+            
+        \item Done in partnership with UC Davis' HPC Core Facilities
+          (HPCCF).
+
+        \item Used long-short term memory (LSTM) network to predict
+          HPC job runtimes and memory usage, with the eventual goal of
+          optimizing scheduling algorithms in high-performance
+          computing (HPC) centers.
+        \end{itemize}
 \end{description}
 
 
