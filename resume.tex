@@ -1,4 +1,4 @@
-\documentclass{resume}
+\documentclass[11pt,a4paper]{moderncv}
 %\usepackage{amsmath}
 %\usepackage{amssymb}
 \usepackage{calc}
@@ -9,7 +9,7 @@
 \usepackage{fancyhdr}
 %\usepackage{float}
 \usepackage{graphicx}
-\usepackage{hyperref}
+%\usepackage{hyperref}
 \usepackage{lastpage}
 %\usepackage{listings}
 %\usepackage{mathtools}
@@ -19,12 +19,34 @@
 \usepackage{biblatex}
 \usepackage{todonotes}
 
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.8]{geometry}
+\recomputelengths
+
 \addbibresource{references.bib}
+
+\newcommand{\sep}{$~\bullet~$}
+\newcommand{\osscontrib}[3]{\item[#1] #2\hfill\\See #3.}
+
+\firstname{Taran}
+\familyname{Lynn}
+\title{Linux Engineer}
+%\address{12 somestreet}{3456 somecity}
+\mobile{(707) 372-3259}
+\email{taranlynn0@gmail.com}
+
+\extrainfo{\\
+  Personal Site: \url{http://lambda-11235.github.io/}\\
+  GitHub: \url{https://github.com/lambda-11235/}\\
+  LinkedIn: \url{https://www.linkedin.com/in/taran-lynn/}
+}
+
+%\quote{Test}
 
 
 \begin{document}
-
-\makeheader{Taran Lynn}{Specialist in Computer Networks}{Whitethorn, Ca 95589}{taranlynn0@gmail.com}{(707) 372-3259}
+\maketitle
 
 \section*{Education}
 
@@ -34,14 +56,6 @@
 
 \item 2022 MS in Computer Science from U.C. Davis (GPA 3.85).
 \end{itemize}
-
-\section*{Important Sites}
-
-\begin{tabular}{ll}
-    Personal & \url{http://lambda-11235.github.io/}\\
-    GitHub & \url{https://github.com/lambda-11235/}\\
-    LinkedIn & \url{https://www.linkedin.com/in/taran-lynn/}\\
-\end{tabular}
 
 
 \section*{Specialty}
@@ -188,7 +202,7 @@ I have also briefly worked on optimizing HPC systems with deep learning.
     repository.}{\url{https://www.redeclipse.net/}}
 \end{description}
 
-\subsubsection*{Personal Open Source Repositories}
+\subsection*{Personal Open Source Repositories}
 
 \begin{description}
     \item[TTyped] A dependently typed language directly based off of
@@ -196,24 +210,21 @@ I have also briefly worked on optimizing HPC systems with deep learning.
 
     \item[debtTools] A command line python program to help users track
         and calculate payments for compound interest debt.
-        Also includes a paper that derives key formulas from first
-        assumptions.
-
+%        Also includes a paper that derives key formulas from first
+%        assumptions.
+%
     \item[Markov's Password] A random password generator based off of
         the XKCD comic ``Password Strength''
         (\url{https://www.xkcd.com/936/}).
-        It uses a variation of Markov chains to generate a sequence of
-        random, made up, and pronounceable words.
-        A version that uses a Hidden Markov Model is also being worked
-        on.
-
+%        It uses a variation of Markov chains to generate a sequence of
+%        random, made up, and pronounceable words.
+%        A version that uses a Hidden Markov Model is also being worked
+%        on.
+%
     \item[FarRP] A library for functional reactive programming that
         leverages dependent types in the Idris.
-        It is based on Neil Sculthorpe and Henrik Nilsson's paper "Safe
-        Functional Reactive Programming through Dependent Types."
-
-    \item[CGDS] A library that uses C macros to provide generic, type save,
-        unobtrusive data structures.
+%        It is based on Neil Sculthorpe and Henrik Nilsson's paper "Safe
+%        Functional Reactive Programming through Dependent Types."
 \end{description}
 
 
@@ -229,28 +240,28 @@ I have also briefly worked on optimizing HPC systems with deep learning.
 \item Received the Towards Outstanding Postgraduate Students (TOPS) Award.
   This is an internal award provided by the College of Engineering at UC Davis.
 \end{itemize}
-
-
-\section*{Notable Courses Taken}
-
-%\newcommand{\course}[2]{\fbox{#1 (#2)}}
-\newcommand{\course}[2]{#1}
-
-    \course{Algorithm Design}{ECS 122A/B}
-\sep\course{Circuits I/II}{ENG 17/EEC 100}
-\sep\course{Computer Architecture}{ECS 154A/B}
-\sep\course{Embedded Systems}{EEC 172}
-\sep\course{Machine Learning}{ECS 171}
-\sep\course{Operating Systems}{ECS 150}
-\sep\course{Parallel Architectures}{ECS 158}
-\sep\course{Deep Learning}{ECS 289G}
-
-\section*{References}
-
-References can be provided upon request.
-
-%\section*{Unofficial Transcript}
-%\includepdf{unofficial_trans.pdf}
+%
+%
+%\section*{Notable Courses Taken}
+%
+%%\newcommand{\course}[2]{\fbox{#1 (#2)}}
+%\newcommand{\course}[2]{#1}
+%
+%    \course{Algorithm Design}{ECS 122A/B}
+%\sep\course{Circuits I/II}{ENG 17/EEC 100}
+%\sep\course{Computer Architecture}{ECS 154A/B}
+%\sep\course{Embedded Systems}{EEC 172}
+%\sep\course{Machine Learning}{ECS 171}
+%\sep\course{Operating Systems}{ECS 150}
+%\sep\course{Parallel Architectures}{ECS 158}
+%\sep\course{Deep Learning}{ECS 289G}
+%
+%\section*{References}
+%
+%References can be provided upon request.
+%
+%%\section*{Unofficial Transcript}
+%%\includepdf{unofficial_trans.pdf}
 
 \end{document}
 
